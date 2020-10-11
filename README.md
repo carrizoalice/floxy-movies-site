@@ -9,7 +9,7 @@ Para el carousel se usó owlCarousel.
 En la sección newsletter se ha incorporado un modal de bootstrap, el cual contiene un formulario de doppler.
 
 ## Url
-[GitHub Pages](https://carrizoalice.github.io/floxy-movies-site/)
+[https://carrizoalice.github.io/floxy-movies-site](https://carrizoalice.github.io/floxy-movies-site/)
 
 
 
