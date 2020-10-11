@@ -23,7 +23,7 @@
                 content.innerHTML = ''
                 for(let valor of datos.Search){//si da mal acá, es porque está mal la url del fetch
                 	if(valor.Poster == "N/A"){
-                		valor.Poster = "images/generic_image.jpg";
+                		valor.Poster = "assets/generic_image.jpg";
                 	}
                     content.innerHTML += `
                     	<div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-4 align-items-stretch">
