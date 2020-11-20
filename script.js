@@ -67,6 +67,16 @@
         } 
 
      
+var followUs = document.querySelector('.rrss')
+var rrssLogos = document.querySelector('.rrss-logos');
+
+	followUs.addEventListener('click', function(){
+		rrssLogos.classList.toggle('mostrar');
+	});
+
+
+
+
 
 
 $(document).ready(function(){

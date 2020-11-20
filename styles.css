@@ -161,6 +161,54 @@ section{
         height: 100%;
     }*/
 
+.rrss{
+    position: fixed;
+    left: 97%;
+    top: 50%;
+    color: #fff;
+    background-color: #6766fc;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 3px 3px 3px;
+    line-height: 14px;
+}    
+
+.rrss-logos{
+    position: fixed;
+    left: 100%;
+    top: 56%;
+    z-index: 1;
+    background-color: #cc5dff;
+    width: 50px;
+    height: 162px;
+    transition: all 0.4s;
+    align-items: center;
+    text-align: center;
+}
+
+.mostrar{
+    left: 97%;
+}
+
+.facebook, .twitter, .linkedin{   
+    width: 40px;
+    height: 40px;
+    border-radius: 5%;
+    margin-top: 10px;    
+    background-color: black;
+    align-items: center;
+    border-radius: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
 
 /*Small devices (landscape phones, 576px and down)*/
 @media (max-width: 576px) { 
