@@ -4,17 +4,37 @@
         var content = document.querySelector('#contenido');
         var spinner = document.querySelector('#spinner');
 
+
         function traer(){
             var valor = document.getElementById("texto").value;
 
 
-            fetch('https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?apikey=6fbbe91d&s='+valor)
-            .then( res => res.json())
-            .then( datos => {
-            	if(spinner.style.display === "none") {spinner.style.display = "inline-block";}
-                iterar(datos);                
-                })
-             }
+            // fetch('https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?apikey=6fbbe91d&s='+valor)
+            // .then( res => res.json())
+            // .then( datos => {
+            // 	if(spinner.style.display === "none") {spinner.style.display = "inline-block";}
+            //     iterar(datos);                
+            //     })
+            //  }
+
+			fetch('https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?apikey=6fbbe91d&s='+valor)
+			  .then(
+			    function(res) {
+			      if (res.status !== 200) {
+			        console.log('Looks like there was a problem. Status Code: ' +
+			          res.status);
+			        return;
+			      }
+			      // Examine the text in the response
+			      res.json().then(function(datos) {			        
+			        iterar(datos);
+			      });
+			    }
+			  )
+			  .catch(function(err) {
+			    console.log('Fetch Error :-S', err);
+			  });
+			}
             
            function iterar(datos){
            console.log(datos); 
@@ -45,6 +65,9 @@
                     `
                 }                 
         } 
+
+     
+
 
 $(document).ready(function(){
 
