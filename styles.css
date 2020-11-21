@@ -193,7 +193,7 @@ section{
     left: 97%;
 }
 
-a{
+.rrss-logos a{
     text-decoration:none!important;
     color: #ffffff!important;
 }
@@ -204,7 +204,6 @@ a{
     height: 40px;
     border-radius: 5%;
     margin-top: 10px;    
-    background-color: black;
     align-items: center;
     border-radius: 50px;    
     background-color: #cc5dff;    
@@ -213,14 +212,13 @@ a{
     text-decoration:none;
     padding-top: 4px;  
 
-
     margin-left: auto;
-    margin-right: auto;
-
+    margin-right: auto;  
 }
 
-.facebook{
-
+.facebook:hover, .twitter:hover, .linkedin:hover{  
+    background-color: #ff00ca;  
+    transition: all 0.5s; 
 }
 
 
