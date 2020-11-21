@@ -182,7 +182,6 @@ section{
     left: 100%;
     top: 56%;
     z-index: 1;
-    background-color: #cc5dff;
     width: 50px;
     height: 162px;
     transition: all 0.4s;
@@ -194,17 +193,33 @@ section{
     left: 97%;
 }
 
-.facebook, .twitter, .linkedin{   
+a{
+    text-decoration:none!important;
+    color: #ffffff!important;
+}
+
+.facebook, .twitter, .linkedin{ 
+    display: block;  
     width: 40px;
     height: 40px;
     border-radius: 5%;
     margin-top: 10px;    
     background-color: black;
     align-items: center;
-    border-radius: 50px;
+    border-radius: 50px;    
+    background-color: #cc5dff;    
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration:none;
+    padding-top: 4px;  
+
 
     margin-left: auto;
     margin-right: auto;
+
+}
+
+.facebook{
 
 }
 
